@@ -24,7 +24,7 @@ class TextClusteringPipeline:
     
     def __init__(
         self,
-        embedding_model_name: str = 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2',
+        embedding_model_name: str = 'ai-forever/FRIDA',
         random_seed: int = 42
     ):
         """
@@ -489,8 +489,10 @@ if __name__ == "__main__":
     # df_input = pd.read_excel('tasks.xlsx')
     
     # Создаём pipeline
+    # 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2' - среднее качество, быстро
+    # 'ai-forever/FRIDA' - высокое качество, но медленно
     pipeline = TextClusteringPipeline(
-        embedding_model_name='sentence-transformers/paraphrase-multilingual-mpnet-base-v2'
+        embedding_model_name='ai-forever/FRIDA'
     )
     
     # Обучаем (fit)
