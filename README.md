@@ -15,7 +15,7 @@
 1. Клонируйте репозиторий:
 ```bash
 git clone <repository-url>
-cd nlp_jira
+cd nlp_tickets
 ```
 
 2. Установите зависимости:
@@ -55,7 +55,6 @@ pipeline.get_cluster_samples(result)
 
 ### TextClusteringPipeline
 
-Основной класс для кластеризации текстов:
 Рекомендуется использовать модель 'ai-forever/FRIDA' для высокого качества. Если нужно быстрое решение, то можно использовать модель 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2'.
 
 ```python
